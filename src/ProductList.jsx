@@ -318,4 +318,3 @@ function ProductList({ onHomeClick }) {
 }
 
 export default ProductList;
-</div>
