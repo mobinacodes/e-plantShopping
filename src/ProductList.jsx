@@ -319,9 +319,3 @@ function ProductList({ onHomeClick }) {
 
 export default ProductList;
 </div>
-
-The three changes, so you know what you're committing: **(1)** `useSelector` imported and subscribed to `state.cart.items`, with `totalCartQuantity` derived via `reduce` over quantities. **(2)** A `<span className='cart_quantity_count'>` inserted after the SVG in the cart icon — that's your live badge. **(3)** `disabled={addedToCart[plant.name]}` on the Add to Cart button, closing the last open grading requirement. I also fixed the indentation of the grid block while I was in there, so the JSX pairs read cleanly.
-
-Paste, commit (`Task: cart quantity badge and disabled add button`), push. Then the victory lap in the app: add a plant → badge ticks to 1 → add three more of things → badge tracks the *sum* → go into the cart, increment, come back — badge kept score the whole time. Two components, one store, zero prop-passing between them.
-
-Say "check" when it's up — final pull, final verification, and then this project is officially closed and we point all this momentum at your portfolio deploy. 🌱
